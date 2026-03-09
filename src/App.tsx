@@ -1,21 +1,31 @@
-import { useState } from "react";
-import { SECTIONS } from "./consts";
+import { useMemo, useState } from "react";
 import Intro from "./containers/Intro";
 import Quiz from "./containers/Quiz";
-import Results from "./containers/Results";
+import verbs from "./data/verbs.json";
 
 const App = () => {
-  const [section, setSection] = useState<string>(SECTIONS[0]);
-  const [questions, _setQuestions] = useState<Record<string, string>>({});
-  const [successRate, _setSuccessRate] = useState<number>(0);
+  const [isIntro, setIsIntro] = useState<boolean>(true);
+  const [mode, setMode] = useState<number | null>(null);
 
+  const questions = useMemo(() => {
+    if (mode === 0) return Object.fromEntries(Object.entries(verbs));
+
+    return {};
+  }, [mode]);
+
+  console.log({ questions });
   return (
-    <div className="h-screen w-screen bg-neutral-100 text-neutral-800 flex flex-col items-center justify-center">
-      {section === SECTIONS[0] && (
-        <Intro onConfirm={() => setSection(SECTIONS[1])} />
+    <div className="h-screen w-screen text-neutral-800">
+      {isIntro ? (
+        <Intro
+          setMode={(mode) => {
+            setMode(mode);
+            setIsIntro(false);
+          }}
+        />
+      ) : (
+        <Quiz questions={questions} />
       )}
-      {section === SECTIONS[1] && <Quiz questions={questions} />}
-      {section === SECTIONS[2] && <Results successRate={successRate} />}
     </div>
   );
 };

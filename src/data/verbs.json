@@ -1,0 +1,57 @@
+{
+  "chcieć": {
+    "spanish": "querer (e:ie)",
+    "forms": {
+      "yo": "quiero",
+      "tu": "quieres",
+      "el": "quiere",
+      "nosotros": "queremos",
+      "vosotros": "queréis",
+      "ellos": "quieren"
+    }
+  },
+  "móc": {
+    "spanish": "poder (o:ue)",
+    "forms": {
+      "yo": "puedo",
+      "tu": "puedes",
+      "el": "puede",
+      "nosotros": "podemos",
+      "vosotros": "podéis",
+      "ellos": "pueden"
+    }
+  },
+  "jeść": {
+    "spanish": "comer",
+    "forms": {
+      "yo": "como",
+      "tu": "comes",
+      "el": "come",
+      "nosotros": "comemos",
+      "vosotros": "coméis",
+      "ellos": "comen"
+    }
+  },
+  "pić": {
+    "spanish": "beber",
+    "forms": {
+      "yo": "bebo",
+      "tu": "bebes",
+      "el": "bebe",
+      "nosotros": "bebemos",
+      "vosotros": "bebéis",
+      "ellos": "beben"
+    }
+  },
+  "pływać": {
+    "spanish": "nadar",
+    "forms": {
+      "yo": "nado",
+      "tu": "nadas",
+      "el": "nada",
+      "nosotros": "nadamos",
+      "vosotros": "nadáis",
+      "ellos": "nadan"
+    }
+  }
+}
