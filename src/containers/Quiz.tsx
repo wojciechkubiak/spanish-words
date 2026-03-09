@@ -74,10 +74,13 @@ const Quiz = ({
         >
           {Object.entries(correctOption[1].forms).map(([key, value]) => (
             <div
-              className="bg-neutral-200 disabled:opacity-50 disabled:cursor-not-allowed hover:cursor-pointer transition-all text-lg duration-300 px-4 py-2 rounded-md"
+              className="flex flex-col bg-neutral-200 disabled:opacity-50 text-lg duration-300 px-4 py-2 rounded-md"
               key={key}
             >
-              {key}: {selectedOption ? value : ""}
+              <span className="text-sm">{key}:</span>
+              <span className="text-md font-semibold">
+                {selectedOption ? value : ""}
+              </span>
             </div>
           ))}
         </div>

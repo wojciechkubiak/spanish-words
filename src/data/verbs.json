@@ -3,55 +3,55 @@
     "spanish": "querer (e:ie)",
     "forms": {
       "yo": "quiero",
-      "tu": "quieres",
-      "el": "quiere",
       "nosotros": "queremos",
+      "tu": "quieres",
       "vosotros": "queréis",
-      "ellos": "quieren"
+      "el/ella": "quiere",
+      "ellos/ellas": "quieren"
     }
   },
   "móc": {
     "spanish": "poder (o:ue)",
     "forms": {
       "yo": "puedo",
-      "tu": "puedes",
-      "el": "puede",
       "nosotros": "podemos",
+      "tu": "puedes",
       "vosotros": "podéis",
-      "ellos": "pueden"
+      "el/ella": "puede",
+      "ellos/ellas": "pueden"
     }
   },
   "jeść": {
     "spanish": "comer",
     "forms": {
       "yo": "como",
-      "tu": "comes",
-      "el": "come",
       "nosotros": "comemos",
+      "tu": "comes",
       "vosotros": "coméis",
-      "ellos": "comen"
+      "el/ella": "come",
+      "ellos/ellas": "comen"
     }
   },
   "pić": {
     "spanish": "beber",
     "forms": {
       "yo": "bebo",
-      "tu": "bebes",
-      "el": "bebe",
       "nosotros": "bebemos",
+      "tu": "bebes",
       "vosotros": "bebéis",
-      "ellos": "beben"
+      "el/ella": "bebe",
+      "ellos/ellas": "beben"
     }
   },
   "pływać": {
     "spanish": "nadar",
     "forms": {
       "yo": "nado",
-      "tu": "nadas",
-      "el": "nada",
       "nosotros": "nadamos",
+      "tu": "nadas",
       "vosotros": "nadáis",
-      "ellos": "nadan"
+      "el/ella": "nada",
+      "ellos/ellas": "nadan"
     }
   }
 }
