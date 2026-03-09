@@ -4,7 +4,7 @@ import animationData from "../assets/intro.json";
 
 const Intro = ({ setMode }: { setMode: (mode: number) => void }) => {
   return (
-    <div className="text-neutral-800 flex flex-col items-center justify-center gap-8">
+    <div className="text-neutral-800 flex flex-col items-center justify-center gap-4">
       <Lottie animationData={animationData} loop={true} />
       <h1 className="text-2xl font-bold border-b border-neutral-300 pb-2">
         Zacznij naukę:

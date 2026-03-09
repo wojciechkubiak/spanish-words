@@ -20,37 +20,38 @@ const Quiz = ({
     return options[Math.floor(Math.random() * options.length)];
   }, [options]);
 
+  console.log({ correctOption });
   return (
     <div className="flex flex-col items-center justify-center gap-2 pt-10">
       <h1 className="text-center min-w-40 text-5xl font-bold border-b border-neutral-300 pb-2 mb-4">
         {correctOption[0]}
       </h1>
-      <div className="flex flex-col items-center justify-center gap-6">
-        {options?.map(([_label, value]) => (
-          <button
-            className={cx(
-              "w-min min-w-80 hover:cursor-pointer text-xl px-4 py-2 rounded-md",
-              {
-                "bg-neutral-200": selectedOption !== value.spanish,
-                "cursor-not-allowed": selectedOption,
-                "bg-red-700 text-white":
-                  selectedOption === value.spanish &&
-                  selectedOption !== correctOption[1].spanish,
-                "bg-green-600 text-white":
-                  selectedOption === value.spanish &&
-                  selectedOption === correctOption[1].spanish,
-              }
-            )}
-            onClick={() => {
-              setIsNextButtonDisabled(false);
-              setSelectedOption(value.spanish);
-            }}
-            disabled={selectedOption !== null}
-            key={value.spanish}
-          >
-            {value.spanish}
-          </button>
-        ))}
+      <div className="flex flex-col items-center justify-center gap-4">
+        {options?.map(([_label, value]) => {
+          const isCorrectAnswer = value.spanish === correctOption[1].spanish;
+
+          return (
+            <button
+              className={cx("w-min min-w-80 text-xl px-4 py-2 rounded-md", {
+                "bg-neutral-200":
+                  !selectedOption ||
+                  (selectedOption !== value.spanish && !isCorrectAnswer),
+                "hover:cursor-pointer": !selectedOption,
+                "cursor-not-allowed text-white": selectedOption,
+                "bg-red-700": selectedOption && !isCorrectAnswer,
+                "bg-green-600": isCorrectAnswer,
+              })}
+              onClick={() => {
+                setIsNextButtonDisabled(false);
+                setSelectedOption(value.spanish);
+              }}
+              disabled={selectedOption !== null}
+              key={value.spanish}
+            >
+              {value.spanish}
+            </button>
+          );
+        })}
 
         <button
           className="bg-neutral-200 w-40 disabled:opacity-50 disabled:cursor-not-allowed hover:cursor-pointer transition-all text-lg duration-300 px-4 py-2 rounded-md mt-6"
@@ -66,7 +67,7 @@ const Quiz = ({
 
         <div
           className={cx(
-            "bg-neutral-100 p-2 rounded-md grid grid-cols-2 gap-2 mb-4",
+            "bg-neutral-100 pb-2 rounded-md grid grid-cols-2 gap-2 mb-4",
             {
               "opacity-50": !selectedOption,
             }
