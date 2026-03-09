@@ -6,8 +6,8 @@ import Results from "./containers/Results";
 
 const App = () => {
   const [section, setSection] = useState<string>(SECTIONS[0]);
-  const [questions, setQuestions] = useState<Record<string, string>>({});
-  const [successRate, setSuccessRate] = useState<number>(0);
+  const [questions, _setQuestions] = useState<Record<string, string>>({});
+  const [successRate, _setSuccessRate] = useState<number>(0);
 
   return (
     <div className="h-screen w-screen bg-neutral-100 text-neutral-800 flex flex-col items-center justify-center">

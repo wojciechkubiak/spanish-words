@@ -1,4 +1,4 @@
-const Quiz = ({ questions }: { questions: Record<string, string> }) => {
+const Quiz = ({ questions: _questions }: { questions: Record<string, string> }) => {
   return <div>Quiz</div>;
 };
 
