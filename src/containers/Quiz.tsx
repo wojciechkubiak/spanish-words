@@ -52,6 +52,18 @@ const Quiz = ({
           </button>
         ))}
 
+        <button
+          className="bg-neutral-200 w-40 disabled:opacity-50 disabled:cursor-not-allowed hover:cursor-pointer transition-all text-lg duration-300 px-4 py-2 rounded-md mt-6"
+          disabled={isNextButtonDisabled}
+          onClick={() => {
+            setSelectedOption(null);
+            setIsNextButtonDisabled(true);
+            setQuestionIndex(questionIndex + 1);
+          }}
+        >
+          Dalej
+        </button>
+
         <div
           className={cx(
             "bg-neutral-100 p-2 rounded-md grid grid-cols-2 gap-2 mb-4",
@@ -69,18 +81,6 @@ const Quiz = ({
             </div>
           ))}
         </div>
-
-        <button
-          className="bg-neutral-200 w-40 disabled:opacity-50 disabled:cursor-not-allowed hover:cursor-pointer transition-all text-lg duration-300 px-4 py-2 rounded-md mt-6"
-          disabled={isNextButtonDisabled}
-          onClick={() => {
-            setSelectedOption(null);
-            setIsNextButtonDisabled(true);
-            setQuestionIndex(questionIndex + 1);
-          }}
-        >
-          Dalej
-        </button>
       </div>
     </div>
   );
