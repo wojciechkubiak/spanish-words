@@ -1,23 +1,23 @@
 {
   "chcieć": {
-    "spanish": "querer (e:ie)",
+    "spanish": "querer",
     "forms": {
       "yo": "quiero",
+      "tú": "quieres",
+      "él/ella": "quiere",
       "nosotros": "queremos",
-      "tu": "quieres",
       "vosotros": "queréis",
-      "el/ella": "quiere",
       "ellos/ellas": "quieren"
     }
   },
   "móc": {
-    "spanish": "poder (o:ue)",
+    "spanish": "poder",
     "forms": {
       "yo": "puedo",
+      "tú": "puedes",
+      "él/ella": "puede",
       "nosotros": "podemos",
-      "tu": "puedes",
       "vosotros": "podéis",
-      "el/ella": "puede",
       "ellos/ellas": "pueden"
     }
   },
@@ -25,10 +25,10 @@
     "spanish": "comer",
     "forms": {
       "yo": "como",
+      "tú": "comes",
+      "él/ella": "come",
       "nosotros": "comemos",
-      "tu": "comes",
       "vosotros": "coméis",
-      "el/ella": "come",
       "ellos/ellas": "comen"
     }
   },
@@ -36,10 +36,10 @@
     "spanish": "beber",
     "forms": {
       "yo": "bebo",
+      "tú": "bebes",
+      "él/ella": "bebe",
       "nosotros": "bebemos",
-      "tu": "bebes",
       "vosotros": "bebéis",
-      "el/ella": "bebe",
       "ellos/ellas": "beben"
     }
   },
@@ -47,11 +47,825 @@
     "spanish": "nadar",
     "forms": {
       "yo": "nado",
+      "tú": "nadas",
+      "él/ella": "nada",
       "nosotros": "nadamos",
-      "tu": "nadas",
       "vosotros": "nadáis",
-      "el/ella": "nada",
       "ellos/ellas": "nadan"
+    }
+  },
+  "śpiewać": {
+    "spanish": "cantar",
+    "forms": {
+      "yo": "canto",
+      "tú": "cantas",
+      "él/ella": "canta",
+      "nosotros": "cantamos",
+      "vosotros": "cantáis",
+      "ellos/ellas": "cantan"
+    }
+  },
+  "potrzebować": {
+    "spanish": "necesitar",
+    "forms": {
+      "yo": "necesito",
+      "tú": "necesitas",
+      "él/ella": "necesita",
+      "nosotros": "necesitamos",
+      "vosotros": "necesitáis",
+      "ellos/ellas": "necesitan"
+    }
+  },
+  "iść/jechać": {
+    "spanish": "ir",
+    "forms": {
+      "yo": "voy",
+      "tú": "vas",
+      "él/ella": "va",
+      "nosotros": "vamos",
+      "vosotros": "vais",
+      "ellos/ellas": "van"
+    }
+  },
+  "robić": {
+    "spanish": "hacer",
+    "forms": {
+      "yo": "hago",
+      "tú": "haces",
+      "él/ella": "hace",
+      "nosotros": "hacemos",
+      "vosotros": "hacéis",
+      "ellos/ellas": "hacen"
+    }
+  },
+  "wiedzieć/umieć": {
+    "spanish": "saber",
+    "forms": {
+      "yo": "sé",
+      "tú": "sabes",
+      "él/ella": "sabe",
+      "nosotros": "sabemos",
+      "vosotros": "sabéis",
+      "ellos/ellas": "saben"
+    }
+  },
+  "mieć": {
+    "spanish": "tener",
+    "forms": {
+      "yo": "tengo",
+      "tú": "tienes",
+      "él/ella": "tiene",
+      "nosotros": "tenemos",
+      "vosotros": "tenéis",
+      "ellos/ellas": "tienen"
+    }
+  },
+  "musieć": {
+    "spanish": "tener que",
+    "forms": {
+      "yo": "tengo que",
+      "tú": "tienes que",
+      "él/ella": "tiene que",
+      "nosotros": "tenemos que",
+      "vosotros": "tenéis que",
+      "ellos/ellas": "tienen que"
+    }
+  },
+  "widzieć": {
+    "spanish": "ver",
+    "forms": {
+      "yo": "veo",
+      "tú": "ves",
+      "él/ella": "ve",
+      "nosotros": "vemos",
+      "vosotros": "veis",
+      "ellos/ellas": "ven"
+    }
+  },
+  "mówić/powiedzieć": {
+    "spanish": "decir",
+    "forms": {
+      "yo": "digo",
+      "tú": "dices",
+      "él/ella": "dice",
+      "nosotros": "decimos",
+      "vosotros": "decís",
+      "ellos/ellas": "dicen"
+    }
+  },
+  "słuchać": {
+    "spanish": "escuchar",
+    "forms": {
+      "yo": "escucho",
+      "tú": "escuchas",
+      "él/ella": "escucha",
+      "nosotros": "escuchamos",
+      "vosotros": "escucháis",
+      "ellos/ellas": "escuchan"
+    }
+  },
+  "być (ser)": {
+    "spanish": "ser",
+    "forms": {
+      "yo": "soy",
+      "tú": "eres",
+      "él/ella": "es",
+      "nosotros": "somos",
+      "vosotros": "sois",
+      "ellos/ellas": "son"
+    }
+  },
+  "być (estar)": {
+    "spanish": "estar",
+    "forms": {
+      "yo": "estoy",
+      "tú": "estás",
+      "él/ella": "está",
+      "nosotros": "estamos",
+      "vosotros": "estáis",
+      "ellos/ellas": "están"
+    }
+  },
+  "sądzić/wierzyć": {
+    "spanish": "creer",
+    "forms": {
+      "yo": "creo",
+      "tú": "crees",
+      "él/ella": "cree",
+      "nosotros": "creemos",
+      "vosotros": "creéis",
+      "ellos/ellas": "creen"
+    }
+  },
+  "dawać": {
+    "spanish": "dar",
+    "forms": {
+      "yo": "doy",
+      "tú": "das",
+      "él/ella": "da",
+      "nosotros": "damos",
+      "vosotros": "dais",
+      "ellos/ellas": "dan"
+    }
+  },
+  "przygotowywać": {
+    "spanish": "preparar",
+    "forms": {
+      "yo": "preparo",
+      "tú": "preparas",
+      "él/ella": "prepara",
+      "nosotros": "preparamos",
+      "vosotros": "preparáis",
+      "ellos/ellas": "preparan"
+    }
+  },
+  "kupować": {
+    "spanish": "comprar",
+    "forms": {
+      "yo": "compro",
+      "tú": "compras",
+      "él/ella": "compra",
+      "nosotros": "compramos",
+      "vosotros": "compráis",
+      "ellos/ellas": "compran"
+    }
+  },
+  "żyć/mieszkać": {
+    "spanish": "vivir",
+    "forms": {
+      "yo": "vivo",
+      "tú": "vives",
+      "él/ella": "vive",
+      "nosotros": "vivimos",
+      "vosotros": "vivís",
+      "ellos/ellas": "viven"
+    }
+  },
+  "próbować": {
+    "spanish": "intentar",
+    "forms": {
+      "yo": "intento",
+      "tú": "intentas",
+      "él/ella": "intenta",
+      "nosotros": "intentamos",
+      "vosotros": "intentáis",
+      "ellos/ellas": "intentan"
+    }
+  },
+  "wracać": {
+    "spanish": "volver",
+    "forms": {
+      "yo": "vuelvo",
+      "tú": "vuelves",
+      "él/ella": "vuelve",
+      "nosotros": "volvemos",
+      "vosotros": "volvéis",
+      "ellos/ellas": "vuelven"
+    }
+  },
+  "pracować": {
+    "spanish": "trabajar",
+    "forms": {
+      "yo": "trabajo",
+      "tú": "trabajas",
+      "él/ella": "trabaja",
+      "nosotros": "trabajamos",
+      "vosotros": "trabajáis",
+      "ellos/ellas": "trabajan"
+    }
+  },
+  "rozmawiać": {
+    "spanish": "hablar",
+    "forms": {
+      "yo": "hablo",
+      "tú": "hablas",
+      "él/ella": "habla",
+      "nosotros": "hablamos",
+      "vosotros": "habláis",
+      "ellos/ellas": "hablan"
+    }
+  },
+  "podróżować": {
+    "spanish": "viajar",
+    "forms": {
+      "yo": "viajo",
+      "tú": "viajas",
+      "él/ella": "viaja",
+      "nosotros": "viajamos",
+      "vosotros": "viajáis",
+      "ellos/ellas": "viajan"
+    }
+  },
+  "tańczyć": {
+    "spanish": "bailar",
+    "forms": {
+      "yo": "bailo",
+      "tú": "bailas",
+      "él/ella": "baila",
+      "nosotros": "bailamos",
+      "vosotros": "bailáis",
+      "ellos/ellas": "bailan"
+    }
+  },
+  "myśleć": {
+    "spanish": "pensar",
+    "forms": {
+      "yo": "pienso",
+      "tú": "piensas",
+      "él/ella": "piensa",
+      "nosotros": "pensamos",
+      "vosotros": "pensáis",
+      "ellos/ellas": "piensan"
+    }
+  },
+  "woleć": {
+    "spanish": "preferir",
+    "forms": {
+      "yo": "prefiero",
+      "tú": "prefieres",
+      "él/ella": "prefiere",
+      "nosotros": "preferimos",
+      "vosotros": "preferís",
+      "ellos/ellas": "prefieren"
+    }
+  },
+  "pytać": {
+    "spanish": "preguntar",
+    "forms": {
+      "yo": "pregunto",
+      "tú": "preguntas",
+      "él/ella": "pregunta",
+      "nosotros": "preguntamos",
+      "vosotros": "preguntáis",
+      "ellos/ellas": "preguntan"
+    }
+  },
+  "zaczynać": {
+    "spanish": "empezar a",
+    "forms": {
+      "yo": "empiezo",
+      "tú": "empiezas",
+      "él/ella": "empieza",
+      "nosotros": "empezamos",
+      "vosotros": "empezáis",
+      "ellos/ellas": "empiezan"
+    }
+  },
+  "znać/poznawać": {
+    "spanish": "conocer",
+    "forms": {
+      "yo": "conozco",
+      "tú": "conoces",
+      "él/ella": "conoce",
+      "nosotros": "conocemos",
+      "vosotros": "conocéis",
+      "ellos/ellas": "conocen"
+    }
+  },
+  "spotykać się": {
+    "spanish": "quedar",
+    "forms": {
+      "yo": "quedo",
+      "tú": "quedas",
+      "él/ella": "queda",
+      "nosotros": "quedamos",
+      "vosotros": "quedáis",
+      "ellos/ellas": "quedan"
+    }
+  },
+  "pisać": {
+    "spanish": "escribir",
+    "forms": {
+      "yo": "escribo",
+      "tú": "escribes",
+      "él/ella": "escribe",
+      "nosotros": "escribimos",
+      "vosotros": "escribís",
+      "ellos/ellas": "escriben"
+    }
+  },
+  "prosić": {
+    "spanish": "pedir",
+    "forms": {
+      "yo": "pido",
+      "tú": "pides",
+      "él/ella": "pide",
+      "nosotros": "pedimos",
+      "vosotros": "pedís",
+      "ellos/ellas": "piden"
+    }
+  },
+  "tłumaczyć": {
+    "spanish": "explicar",
+    "forms": {
+      "yo": "explico",
+      "tú": "explicas",
+      "él/ella": "explica",
+      "nosotros": "explicamos",
+      "vosotros": "explicáis",
+      "ellos/ellas": "explican"
+    }
+  },
+  "przybywać": {
+    "spanish": "llegar",
+    "forms": {
+      "yo": "llego",
+      "tú": "llegas",
+      "él/ella": "llega",
+      "nosotros": "llegamos",
+      "vosotros": "llegáis",
+      "ellos/ellas": "llegan"
+    }
+  },
+  "czuć się": {
+    "spanish": "sentirse",
+    "forms": {
+      "yo": "me siento",
+      "tú": "te sientes",
+      "él/ella": "se siente",
+      "nosotros": "nos sentimos",
+      "vosotros": "os sentís",
+      "ellos/ellas": "se sienten"
+    }
+  },
+  "otwierać": {
+    "spanish": "abrir",
+    "forms": {
+      "yo": "abro",
+      "tú": "abres",
+      "él/ella": "abre",
+      "nosotros": "abrimos",
+      "vosotros": "abrís",
+      "ellos/ellas": "abren"
+    }
+  },
+  "rozumieć": {
+    "spanish": "entender",
+    "forms": {
+      "yo": "entiendo",
+      "tú": "entiendes",
+      "él/ella": "entiende",
+      "nosotros": "entendemos",
+      "vosotros": "entendéis",
+      "ellos/ellas": "entienden"
+    }
+  },
+  "kłamać": {
+    "spanish": "mentir",
+    "forms": {
+      "yo": "miento",
+      "tú": "mientes",
+      "él/ella": "miente",
+      "nosotros": "mentimos",
+      "vosotros": "mentís",
+      "ellos/ellas": "mienten"
+    }
+  },
+  "odpowiadać": {
+    "spanish": "responder",
+    "forms": {
+      "yo": "respondo",
+      "tú": "respondes",
+      "él/ella": "responde",
+      "nosotros": "respondemos",
+      "vosotros": "respondéis",
+      "ellos/ellas": "responden"
+    }
+  },
+  "dostawać": {
+    "spanish": "recibir",
+    "forms": {
+      "yo": "recibo",
+      "tú": "recibes",
+      "él/ella": "recibe",
+      "nosotros": "recibimos",
+      "vosotros": "recibís",
+      "ellos/ellas": "reciben"
+    }
+  },
+  "uczyć się": {
+    "spanish": "aprender",
+    "forms": {
+      "yo": "aprendo",
+      "tú": "aprendes",
+      "él/ella": "aprende",
+      "nosotros": "aprendemos",
+      "vosotros": "aprendéis",
+      "ellos/ellas": "aprenden"
+    }
+  },
+  "tracić/gubić": {
+    "spanish": "perder",
+    "forms": {
+      "yo": "pierdo",
+      "tú": "pierdes",
+      "él/ella": "pierde",
+      "nosotros": "perdemos",
+      "vosotros": "perdéis",
+      "ellos/ellas": "pierden"
+    }
+  },
+  "wychodzić": {
+    "spanish": "salir",
+    "forms": {
+      "yo": "salgo",
+      "tú": "sales",
+      "él/ella": "sale",
+      "nosotros": "salimos",
+      "vosotros": "salís",
+      "ellos/ellas": "salen"
+    }
+  },
+  "czekać/mieć nadzieję": {
+    "spanish": "esperar",
+    "forms": {
+      "yo": "espero",
+      "tú": "esperas",
+      "él/ella": "espera",
+      "nosotros": "esperamos",
+      "vosotros": "esperáis",
+      "ellos/ellas": "esperan"
+    }
+  },
+  "pamiętać": {
+    "spanish": "recordar",
+    "forms": {
+      "yo": "recuerdo",
+      "tú": "recuerdas",
+      "él/ella": "recuerda",
+      "nosotros": "recordamos",
+      "vosotros": "recordáis",
+      "ellos/ellas": "recuerdan"
+    }
+  },
+  "dziać się/spędzać": {
+    "spanish": "pasar",
+    "forms": {
+      "yo": "paso",
+      "tú": "pasas",
+      "él/ella": "pasa",
+      "nosotros": "pasamos",
+      "vosotros": "pasáis",
+      "ellos/ellas": "pasan"
+    }
+  },
+  "odpoczywać": {
+    "spanish": "descansar",
+    "forms": {
+      "yo": "descanso",
+      "tú": "descansas",
+      "él/ella": "descansa",
+      "nosotros": "descansamos",
+      "vosotros": "descansáis",
+      "ellos/ellas": "descansan"
+    }
+  },
+  "zapominać": {
+    "spanish": "olvidar",
+    "forms": {
+      "yo": "olvido",
+      "tú": "olvidas",
+      "él/ella": "olvida",
+      "nosotros": "olvidamos",
+      "vosotros": "olvidáis",
+      "ellos/ellas": "olvidan"
+    }
+  },
+  "cieszyć się": {
+    "spanish": "alegrarse",
+    "forms": {
+      "yo": "me alegro",
+      "tú": "te alegras",
+      "él/ella": "se alegra",
+      "nosotros": "nos alegramos",
+      "vosotros": "os alegráis",
+      "ellos/ellas": "se alegran"
+    }
+  },
+  "wybierać": {
+    "spanish": "elegir",
+    "forms": {
+      "yo": "elijo",
+      "tú": "eliges",
+      "él/ella": "elige",
+      "nosotros": "elegimos",
+      "vosotros": "elegís",
+      "ellos/ellas": "eligen"
+    }
+  },
+  "decydować": {
+    "spanish": "decidir",
+    "forms": {
+      "yo": "decido",
+      "tú": "decides",
+      "él/ella": "decide",
+      "nosotros": "decidimos",
+      "vosotros": "decidís",
+      "ellos/ellas": "deciden"
+    }
+  },
+  "martwić się": {
+    "spanish": "preocuparse",
+    "forms": {
+      "yo": "me preocupo",
+      "tú": "te preocupas",
+      "él/ella": "se preocupa",
+      "nosotros": "nos preocupamos",
+      "vosotros": "os preocupáis",
+      "ellos/ellas": "se preocupan"
+    }
+  },
+  "brać": {
+    "spanish": "coger",
+    "forms": {
+      "yo": "cojo",
+      "tú": "coges",
+      "él/ella": "coge",
+      "nosotros": "cogemos",
+      "vosotros": "cogéis",
+      "ellos/ellas": "cogen"
+    }
+  },
+  "kłócić się": {
+    "spanish": "discutir",
+    "forms": {
+      "yo": "discuto",
+      "tú": "discutes",
+      "él/ella": "discute",
+      "nosotros": "discutimos",
+      "vosotros": "discutís",
+      "ellos/ellas": "discuten"
+    }
+  },
+  "tęsknić": {
+    "spanish": "echar de menos",
+    "forms": {
+      "yo": "echo de menos",
+      "tú": "echas de menos",
+      "él/ella": "echa de menos",
+      "nosotros": "echamos de menos",
+      "vosotros": "echáis de menos",
+      "ellos/ellas": "echan de menos"
+    }
+  },
+  "obiecywać": {
+    "spanish": "prometer",
+    "forms": {
+      "yo": "prometo",
+      "tú": "prometes",
+      "él/ella": "promete",
+      "nosotros": "prometemos",
+      "vosotros": "prometéis",
+      "ellos/ellas": "prometen"
+    }
+  },
+  "pozwalać": {
+    "spanish": "permitir",
+    "forms": {
+      "yo": "permito",
+      "tú": "permites",
+      "él/ella": "permite",
+      "nosotros": "permitimos",
+      "vosotros": "permitís",
+      "ellos/ellas": "permiten"
+    }
+  },
+  "budzić się": {
+    "spanish": "despertarse",
+    "forms": {
+      "yo": "me despierto",
+      "tú": "te despiertas",
+      "él/ella": "se despierta",
+      "nosotros": "nos despertamos",
+      "vosotros": "os despertáis",
+      "ellos/ellas": "se despiertan"
+    }
+  },
+  "przytulać": {
+    "spanish": "abrazar",
+    "forms": {
+      "yo": "abrazo",
+      "tú": "abrazas",
+      "él/ella": "abraza",
+      "nosotros": "abrazamos",
+      "vosotros": "abrazáis",
+      "ellos/ellas": "abrazan"
+    }
+  },
+  "zostawiać": {
+    "spanish": "dejar",
+    "forms": {
+      "yo": "dejo",
+      "tú": "dejas",
+      "él/ella": "deja",
+      "nosotros": "dejamos",
+      "vosotros": "dejáis",
+      "ellos/ellas": "dejan"
+    }
+  },
+  "kończyć": {
+    "spanish": "acabar",
+    "forms": {
+      "yo": "acabo",
+      "tú": "acabas",
+      "él/ella": "acaba",
+      "nosotros": "acabamos",
+      "vosotros": "acabáis",
+      "ellos/ellas": "acaban"
+    }
+  },
+  "pomagać": {
+    "spanish": "ayudar",
+    "forms": {
+      "yo": "ayudo",
+      "tú": "ayudas",
+      "él/ella": "ayuda",
+      "nosotros": "ayudamos",
+      "vosotros": "ayudáis",
+      "ellos/ellas": "ayudan"
+    }
+  },
+  "pokazywać": {
+    "spanish": "mostrar",
+    "forms": {
+      "yo": "muestro",
+      "tú": "muestras",
+      "él/ella": "muestra",
+      "nosotros": "mostramos",
+      "vosotros": "mostráis",
+      "ellos/ellas": "muestran"
+    }
+  },
+  "czytać": {
+    "spanish": "leer",
+    "forms": {
+      "yo": "leo",
+      "tú": "lees",
+      "él/ella": "lee",
+      "nosotros": "leemos",
+      "vosotros": "leéis",
+      "ellos/ellas": "leen"
+    }
+  },
+  "przychodzić": {
+    "spanish": "venir",
+    "forms": {
+      "yo": "vengo",
+      "tú": "vienes",
+      "él/ella": "viene",
+      "nosotros": "venimos",
+      "vosotros": "venís",
+      "ellos/ellas": "vienen"
+    }
+  },
+  "wygrać/zarabiać": {
+    "spanish": "ganar",
+    "forms": {
+      "yo": "gano",
+      "tú": "ganas",
+      "él/ella": "gana",
+      "nosotros": "ganamos",
+      "vosotros": "ganáis",
+      "ellos/ellas": "ganan"
+    }
+  },
+  "rozwiązywać": {
+    "spanish": "solucionar",
+    "forms": {
+      "yo": "soluciono",
+      "tú": "solucionas",
+      "él/ella": "soluciona",
+      "nosotros": "solucionamos",
+      "vosotros": "solucionáis",
+      "ellos/ellas": "solucionan"
+    }
+  },
+  "planować": {
+    "spanish": "planear",
+    "forms": {
+      "yo": "planeo",
+      "tú": "planeas",
+      "él/ella": "planea",
+      "nosotros": "planeamos",
+      "vosotros": "planeáis",
+      "ellos/ellas": "planean"
+    }
+  },
+  "realizować": {
+    "spanish": "realizar",
+    "forms": {
+      "yo": "realizo",
+      "tú": "realizas",
+      "él/ella": "realiza",
+      "nosotros": "realizamos",
+      "vosotros": "realizáis",
+      "ellos/ellas": "realizan"
+    }
+  },
+  "szukać": {
+    "spanish": "buscar",
+    "forms": {
+      "yo": "busco",
+      "tú": "buscas",
+      "él/ella": "busca",
+      "nosotros": "buscamos",
+      "vosotros": "buscáis",
+      "ellos/ellas": "buscan"
+    }
+  },
+  "akceptować": {
+    "spanish": "aceptar",
+    "forms": {
+      "yo": "acepto",
+      "tú": "aceptas",
+      "él/ella": "acepta",
+      "nosotros": "aceptamos",
+      "vosotros": "aceptáis",
+      "ellos/ellas": "aceptan"
+    }
+  },
+  "narzekać": {
+    "spanish": "quejarse",
+    "forms": {
+      "yo": "me quejo",
+      "tú": "te quejas",
+      "él/ella": "se queja",
+      "nosotros": "nos quejamos",
+      "vosotros": "os quejáis",
+      "ellos/ellas": "se quejan"
+    }
+  },
+  "wytrzymywać": {
+    "spanish": "aguantar",
+    "forms": {
+      "yo": "aguanto",
+      "tú": "aguantas",
+      "él/ella": "aguanta",
+      "nosotros": "aguantamos",
+      "vosotros": "aguantáis",
+      "ellos/ellas": "aguantan"
+    }
+  },
+  "odkrywać": {
+    "spanish": "descubrir",
+    "forms": {
+      "yo": "descubro",
+      "tú": "descubres",
+      "él/ella": "descubre",
+      "nosotros": "descubrimos",
+      "vosotros": "descubrís",
+      "ellos/ellas": "descubren"
+    }
+  },
+  "spać": {
+    "spanish": "dormir",
+    "forms": {
+      "yo": "duermo",
+      "tú": "duermes",
+      "él/ella": "duerme",
+      "nosotros": "dormimos",
+      "vosotros": "dormís",
+      "ellos/ellas": "duermen"
     }
   }
 }
