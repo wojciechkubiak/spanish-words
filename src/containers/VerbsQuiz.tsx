@@ -1,7 +1,7 @@
 import cx from "classnames";
 import { useMemo, useState } from "react";
 
-const Quiz = ({
+const VerbsQuiz = ({
   questions,
 }: {
   questions: Record<string, { spanish: string; forms: Record<string, string> }>;
@@ -73,27 +73,28 @@ const Quiz = ({
         <div
           className={cx("flex gap-2 mb-4", { "opacity-50": !selectedOption })}
         >
-          {[["yo", "tú", "él/ella"], ["nosotros", "vosotros", "ellos/ellas"]].map(
-            (group, i) => (
-              <div key={i} className="flex flex-col gap-2">
-                {group.map((key) => (
-                  <div
-                    key={key}
-                    className="flex flex-col bg-neutral-200 text-lg px-4 py-2 rounded-md"
-                  >
-                    <span className="text-sm">{key}:</span>
-                    <span className="text-md font-semibold">
-                      {selectedOption ? correctOption[1].forms[key] : ""}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            )
-          )}
+          {[
+            ["yo", "tú", "él/ella"],
+            ["nosotros", "vosotros", "ellos/ellas"],
+          ].map((group, i) => (
+            <div key={i} className="flex flex-col gap-2">
+              {group.map((key) => (
+                <div
+                  key={key}
+                  className="flex flex-col bg-neutral-200 text-lg px-4 py-2 rounded-md"
+                >
+                  <span className="text-sm">{key}:</span>
+                  <span className="text-md font-semibold">
+                    {selectedOption ? correctOption[1].forms[key] : ""}
+                  </span>
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-export default Quiz;
+export default VerbsQuiz;
