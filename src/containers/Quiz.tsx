@@ -27,20 +27,22 @@ const Quiz = ({
         {correctOption[0]}
       </h1>
       <div className="flex flex-col items-center justify-center gap-4">
-        {options?.map(([_label, value]) => {
+        {options?.map(([label, value]) => {
           const isCorrectAnswer = value.spanish === correctOption[1].spanish;
 
           return (
             <button
-              className={cx("w-min min-w-80 text-xl px-4 py-2 rounded-md", {
-                "bg-neutral-200":
-                  !selectedOption ||
-                  (selectedOption !== value.spanish && !isCorrectAnswer),
-                "hover:cursor-pointer": !selectedOption,
-                "cursor-not-allowed text-white": selectedOption,
-                "bg-red-700": selectedOption && !isCorrectAnswer,
-                "bg-green-600": isCorrectAnswer,
-              })}
+              className={cx(
+                "flex flex-col items-center justify-center bg-neutral-200 w-min min-w-80 text-xl px-4 py-2 rounded-md",
+                {
+                  "hover:cursor-pointer": !selectedOption,
+                  "cursor-not-allowed": selectedOption,
+                  "text-red-700":
+                    selectedOption === value.spanish && !isCorrectAnswer,
+                  "text-green-600":
+                    selectedOption === value.spanish && isCorrectAnswer,
+                }
+              )}
               onClick={() => {
                 setIsNextButtonDisabled(false);
                 setSelectedOption(value.spanish);
@@ -48,7 +50,10 @@ const Quiz = ({
               disabled={selectedOption !== null}
               key={value.spanish}
             >
-              {value.spanish}
+              <span>{value.spanish}</span>
+              {selectedOption && (
+                <span className="text-sm text-neutral-500">({label})</span>
+              )}
             </button>
           );
         })}
@@ -66,24 +71,25 @@ const Quiz = ({
         </button>
 
         <div
-          className={cx(
-            "bg-neutral-100 pb-2 rounded-md grid grid-cols-2 gap-2 mb-4",
-            {
-              "opacity-50": !selectedOption,
-            }
-          )}
+          className={cx("flex gap-2 mb-4", { "opacity-50": !selectedOption })}
         >
-          {Object.entries(correctOption[1].forms).map(([key, value]) => (
-            <div
-              className="flex flex-col bg-neutral-200 disabled:opacity-50 text-lg duration-300 px-4 py-2 rounded-md"
-              key={key}
-            >
-              <span className="text-sm">{key}:</span>
-              <span className="text-md font-semibold">
-                {selectedOption ? value : ""}
-              </span>
-            </div>
-          ))}
+          {[["yo", "tú", "él/ella"], ["nosotros", "vosotros", "ellos/ellas"]].map(
+            (group, i) => (
+              <div key={i} className="flex flex-col gap-2">
+                {group.map((key) => (
+                  <div
+                    key={key}
+                    className="flex flex-col bg-neutral-200 text-lg px-4 py-2 rounded-md"
+                  >
+                    <span className="text-sm">{key}:</span>
+                    <span className="text-md font-semibold">
+                      {selectedOption ? correctOption[1].forms[key] : ""}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            )
+          )}
         </div>
       </div>
     </div>
